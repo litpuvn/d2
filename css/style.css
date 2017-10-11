@@ -1396,8 +1396,7 @@
 		line-height: 2;
 	}
 	
-	.profile_photo {
-		width: 150px;
+	.profile_photo {		
 		height: 190px;
 	}
 	
@@ -1411,4 +1410,22 @@
 		color: blue;
 		font-weight: bold !important;
 		font-size: xx-large;
+	}
+
+	div.person-description {
+		padding-left: 20px;
+	}
+	
+	span.person-name {
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+	
+	span.person-title {
+		font-size: 0.9em;
+		font-weight: normal;
+	}
+	
+	div.person-frame {
+		width: 300px;
 	}
