@@ -1084,7 +1084,7 @@
 			-ms-animation: none;
 			animation: none;
 			background-color: white;
-			box-shadow: none;
+			box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
 			/* box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05); */
 			color: black;
 		}
@@ -1116,6 +1116,10 @@
 			right: 1.5em;
 			top: 0;
 			vertical-align: middle;
+			background: black;
+			color: white;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 
 			#header nav > ul {
@@ -1233,11 +1237,16 @@
 			}
 
 /* Banner */
-
+	.row {
+		padding-top: 60px;
+	}
+	a.text {
+		color: #91d5f1;
+	}
 	#banner {
 		background-attachment: scroll,						fixed;
 		background-color: steelblue;
-		background-image: url("../images/hortonworks-dataplane-herobanner-home.jpg"), url("../images/embers.png");
+		/* background-image: url("../images/hortonworks-dataplane-herobanner-home.jpg"), url("../images/embers.png"); */
 		background-position: top left,					center center;
 		background-repeat: repeat,						no-repeat;
 		background-size: 						cover;
@@ -1247,22 +1256,22 @@
 		text-align: center;
 	}
 
-		#banner:after {
-			-moz-transition: opacity 2s ease-in-out;
-			-webkit-transition: opacity 2s ease-in-out;
-			-o-transition: opacity 2s ease-in-out;
-			-ms-transition: opacity 2s ease-in-out;
-			transition: opacity 2s ease-in-out;
-			background: #3d4045;
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			z-index: 1;
-		}
+		/* #banner:after { */
+			/* -moz-transition: opacity 2s ease-in-out; */
+			/* -webkit-transition: opacity 2s ease-in-out; */
+			/* -o-transition: opacity 2s ease-in-out; */
+			/* -ms-transition: opacity 2s ease-in-out; */
+			/* transition: opacity 2s ease-in-out; */
+			/* background: #3d4045; */
+			/* content: ''; */
+			/* height: 100%; */
+			/* left: 0; */
+			/* opacity: 0; */
+			/* position: absolute; */
+			/* top: 0; */
+			/* width: 100%; */
+			/* z-index: 1; */
+		/* } */
 
 		#banner :last-child {
 			margin-bottom: 0;
@@ -1401,13 +1410,13 @@
 	}
 	
 	.logo_initial {
-		color:red; 
+		color:#d20d0d; 
 		font-weight: bold !important;
 		font-size: -webkit-xxx-large;
 	}
 	
 	.logo_text {
-		color: blue;
+		color: rgba(59, 110, 143, 0.8);
 		font-weight: bold !important;
 		font-size: xx-large;
 	}
