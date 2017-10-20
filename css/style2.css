@@ -5,7 +5,7 @@ body { background: #fff; color: #222; padding: 0; margin: 0; font-family: "Helve
 body { line-height: 1.5; color: #171717; font-family: Trebuchet, sans-serif; font-weight: 500; }
 
 /* Grid HTML Classes */
-.row { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; }
+.row { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; *zoom: 1; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
 .row.collapse > .column, .row.collapse > .columns { position: relative; padding-left: 0; padding-right: 0; float: left; }
@@ -52,5 +52,21 @@ body { line-height: 1.5; color: #171717; font-family: Trebuchet, sans-serif; fon
 
 .home-hero.carousel .crsl-items .crsl-wrap .crsl-item .crsl-caption { padding: 1.875em; }
 .home-hero.carousel .crsl-items .crsl-wrap .crsl-item .crsl-caption p:last-child { margin-bottom: 0; }
-@media (min-width: 63.5em) { .home-hero.carousel .crsl-items .crsl-wrap .crsl-item .crsl-caption { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; padding: 0; background: none; }
-  .home-hero.carousel .crsl-items .crsl-wrap .crsl-item .crsl-caption .crsl-caption-helper { position: relative; height: auto; top: 50%; padding: 1.875em; background: rgba(0, 0, 0, 0.7); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); } }
+@media (min-width: 63.5em) { 
+	.home-hero.carousel .crsl-items .crsl-wrap .crsl-item .crsl-caption { 
+		-webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; 
+		transform-style: preserve-3d; 
+		padding: 0; background: none; }
+	.home-hero.carousel .crsl-caption .crsl-caption-helper { 
+		position: relative; 
+		height: auto; 
+		top: 50%; 
+		padding: 1.875em; 
+		background: rgba(0, 0, 0, 0.7); 
+		-webkit-transform: translateY(-50%); 
+		-ms-transform: translateY(-50%); 
+		transform: translateY(-50%); } 
+}
+
+.home-hero.carousel .crsl-wrap .crsl-caption { 
+	margin: auto; height: 50%; top: 0; left: inherit; bottom: 0; right: 0; padding: 1.875em; padding-top: 12em; }

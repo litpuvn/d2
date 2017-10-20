@@ -1115,9 +1115,7 @@
 			position: absolute;
 			right: 1.5em;
 			top: 0;
-			vertical-align: middle;
-			background: black;
-			color: white;
+			vertical-align: middle;			
 			padding-left: 20px;
 			padding-right: 20px;
 		}
