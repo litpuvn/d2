@@ -1115,9 +1115,7 @@
 			position: absolute;
 			right: 1.5em;
 			top: 0;
-			vertical-align: middle;			
-			padding-left: 20px;
-			padding-right: 55px;
+			vertical-align: middle;						
 		}
 
 			#header nav > ul {
@@ -1406,10 +1404,6 @@
 	
 	.profile_photo {		
 		height: 190px;
-	}
-	
-	.logopic {
-		padding-left: 70px;
 	}
 	
 	.logo_initial {
