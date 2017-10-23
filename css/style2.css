@@ -5,7 +5,7 @@ body { background: #fff; color: #222; padding: 0; margin: 0; font-family: "Helve
 body { line-height: 1.5; color: #171717; font-family: Trebuchet, sans-serif; font-weight: 500; }
 
 /* Grid HTML Classes */
-.row { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; *zoom: 1; }
+.row { max-width: 1200px; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; *zoom: 1; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
 .row.collapse > .column, .row.collapse > .columns { position: relative; padding-left: 0; padding-right: 0; float: left; }
@@ -69,4 +69,4 @@ body { line-height: 1.5; color: #171717; font-family: Trebuchet, sans-serif; fon
 }
 
 .home-hero.carousel .crsl-wrap .crsl-caption { 
-	margin: auto; height: 50%; top: 0; left: inherit; bottom: 0; right: 0; padding: 1.875em; padding-top: 12em; }
+	margin: auto; height: 50%; top: 0; left: inherit; bottom: 0; right: 0; padding: 1.875em; padding-top: 14em; }
