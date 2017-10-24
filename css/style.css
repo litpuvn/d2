@@ -995,7 +995,9 @@
 	.wrapper {
 		padding: 5em 0 3em 0;
 	}
-
+		.wrapper.styleclose {
+			padding: 1em 0 3em 0;
+		}
 		.wrapper.style1 {
 			/* background:  #f2f2f2; */
 			background: #eefafb;
@@ -1126,10 +1128,16 @@
 			}
 
 				#header nav > ul > li {
-					border-radius: 0.5em;
+					/* border-radius: 0.5em; */
 					display: inline-block;
-					margin-left: 2em;
+					/* margin-left: 2em; */
 					padding-left: 0;
+					width: 120px;
+					text-align: center;
+				}
+				
+				#header nav > ul li:hover {
+					background-color: antiquewhite;
 				}
 
 					#header nav > ul > li a {
@@ -1137,6 +1145,7 @@
 						color: inherit;
 						display: inline-block;
 						text-decoration: none;
+						width: 100%;
 					}
 
 						#header nav > ul > li a.icon:before {
@@ -1235,7 +1244,7 @@
 
 /* Banner */
 	.row {
-		padding-top: 60px;
+		/* padding-top: 60px; */
 	}
 	a.text {
 		color: #91d5f1;

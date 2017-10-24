@@ -70,3 +70,17 @@ body { line-height: 1.5; color: #171717; font-family: Trebuchet, sans-serif; fon
 
 .home-hero.carousel .crsl-wrap .crsl-caption { 
 	margin: auto; height: 50%; top: 0; left: inherit; bottom: 0; right: 0; padding: 1.875em; padding-top: 14em; }
+	
+.news-date {
+	color: white;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.news-description {
+	color: white;
+}
+
+span.news-description b {
+	color: white;
+}

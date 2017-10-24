@@ -32,11 +32,13 @@
 			}
 			
 			
-			.mySlides2 {display:none}
+			.mySlides2 {
+				display:none;
+				text-align: center;
+			}
 
 			/* Slideshow container */
-			.slideshow-container {
-			  max-width: 1000px;
+			.slideshow-container {			  
 			  position: relative;
 			  margin: auto;
 			}
@@ -99,9 +101,9 @@
 			  .slidetext {font-size: 11px}
 			}
 			
-			.slidingpics {
-				height: 500px;
-				width: 900px;
+			.slidingpics {				
+				width: 700px;
+				height: 400px;
 			}
 		</style>		
 	</head>
@@ -115,7 +117,7 @@
 				</div>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li style="background-color: antiquewhite"><a href="index.html">Home</a></li>
 						<li><a href="people.html">People</a></li>
 						<li><a href="projects.html">Projects</a></li>
 						<li><a href="publications.html">Publications</a></li>					
@@ -126,12 +128,12 @@
 
 		<!-- Banner -->
 		<section id="main" class="wrapper style1">
-		<div style="margin-left:auto; margin-right: auto; max-width: 1150px">
+		<div style="margin-left:auto; margin-right: auto; max-width: 1150px; max-height: 420px">
 			<div class="row" style="display: inline-flex">
 				<div class="home-hero carousel" style="width: 800px" >
 					<div data-navigation="nav-carousel1" data-crsl="[{&quot;visible&quot;: 1, &quot;itemMinWidth&quot;: 300, &quot;itemMargin&quot;: 0}]" class="crsl-items" style="width: 100%; overflow: hidden;">
 						<div class="crsl-wrap" style="margin-left: 0px;">
-							<figure class="crsl-item crsl-active" style="visibility: visible; position: relative; float: left; overflow: hidden; height: auto; width: 1000px; margin-right: 0px;">
+							<figure class="crsl-item crsl-active" style="visibility: visible; position: relative; float: left; overflow: hidden; height: auto; width: 800px; margin-right: 0px;">
 								<div class="slideshow-container">
 
 									<div class="mySlides2 fade">
@@ -141,13 +143,13 @@
 									</div>
 
 									<div class="mySlides2 fade">
-									  <div class="numbertext">2 / 2</div>
+									  <div class="numbertext">2 / 3</div>
 									  <img src="images/GBM.png" class="slidingpics" />
 									  <div class="slidetext">Caption Two</div>
 									</div>
 									
 									<div class="mySlides2 fade">
-									  <div class="numbertext">2 / 2</div>
+									  <div class="numbertext">3 / 3</div>
 									  <img src="images/word-correlation.png" class="slidingpics" />
 									  <div class="slidetext">Caption Two</div>
 									</div>
@@ -167,16 +169,19 @@
 							<div class="crsl-caption-helper">
 								<h3 style="padding-bottom: 0px; color: #91d5f1">Latest News</h3>
 								<hr style="border: white 1px solid" />
-								<span><a href="#" class="text">Harvesting big data could bring about the next transport revolution, right now</a></span>
+								<span><a href="http://www.myweb.ttu.edu/tnhondan/iDVL/news.php?id=0" class="text">VISUAL 2017 accepted 2 papers</a></span>
+								<br />
+								<span class="news-date">May 6th, 2017</span>	
+								<br />
+								<span class="news-description">Congratulations to <b>Long</b> and <b>Vinh</b></span>
 								<br />
 								<br />
-								<span><a href="#" class="text">Bartering for science: using mobile apps to get research data</a></span>
+								<span><a href="http://www.myweb.ttu.edu/tnhondan/iDVL/news.php?id=1" class="text">Got NFS grant</a></span>
 								<br />
+								<span class="news-date">April 3rd, 2017</span>
 								<br />
-								<span><a href="#" class="text">Big data has not revolutionised medicine – we need big theory alongside it</a></span>
-								<br />
-								<br />
-								<span><a href="#" class="text">Big data has not revolutionised medicine – we need big theory alongside it</a></span>								
+								<span class="news-description">SGIR awarded the proposal of <b>Dr. Dang's team.</b></span>
+								<br />								
 							</div>
 						</figcaption>
 					</div>					
@@ -186,7 +191,7 @@
 		</section>
 
 		<!-- One -->
-		<section id="one" class="wrapper style2">
+		<section id="one" class="wrapper style2 styleclose">
 			<div class="container">
 				<header class="major">
 					<h2>Welcome</h2>					
