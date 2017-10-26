@@ -1426,6 +1426,10 @@
 		font-weight: bold !important;
 		font-size: xx-large;
 	}
+	
+	.logo-image {
+		padding-top: 4px;
+	}
 
 	div.person-description {
 		padding-left: 20px;
