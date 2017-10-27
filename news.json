@@ -12,5 +12,12 @@
 		"date": "September 20, 2017",
 		"description": "SCC-Planning: Enhancing Water Resource Management and Infrastructure Improvement through Sensing, Computation, and Community Engagement. Congratulations to <b>Dr. Fang Jin</b> team.",
 		"url": "http://www.depts.ttu.edu/waterresources/scc/index.php"
-	}	
+	},
+	"id0":
+	{
+		"title": "Fake News",
+		"date": "September 1, 2017",
+		"description": "This news is fake and should not be displayed. For testing purpose only.",
+		"url": "#"
+	}
 }

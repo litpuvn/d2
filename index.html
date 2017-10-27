@@ -157,25 +157,28 @@
 						</div>
 					</div>
 				</div>
+<script>
+$(document).ready(function(){	
+	$.getJSON("https://litpuvn.github.io/d2/news.json", function(result){		
+		var count = 0;
+		if (count <= 2) {
+			$.each(result, function(i, field){
+				count++;			
+				$("#latestnews").append('<div><span><a href="'+field.url+'" class="text">' + field.title + '</a></span><br /><span class="news-date">'+field.date+'</span><br /><span class="news-description">'+field.description+'</span></div>');
+				if (count == 1) 
+					$("#latestnews").append('<br />');			
+			});
+		}
+	});
+});
+</script>
 				<div class="home-hero carousel" style="height: 500px; width: 440px">					
 					<div class="crsl-wrap" style="margin-left: 0px;">
 						<figcaption class="crsl-caption">
 							<div class="crsl-caption-helper">
 								<h3 style="padding-top: 1em; color: #91d5f1; line-height: 0em">Latest News</h3>
 								<hr style="border: white 1px solid; margin: 0 0 1em" />
-								<span><a href="publications.html" class="text">IEEE Big Data Special Sessions accepted 2 papers</a></span>
-								<br />
-								<span class="news-date">October 20, 2017</span>	
-								<br />
-								<span class="news-description">Congratulations to <b>Long</b> and <b>Yang</b></span>
-								<br />
-								<br />								
-								<span><a href="http://www.depts.ttu.edu/waterresources/scc/index.php" class="text">NFS offers grant to our West Texas Water project</a></span>
-								<br />
-								<span class="news-date">September 20, 2017</span>	
-								<br />
-								<span class="news-description">SCC-Planning: Enhancing Water Resource Management and Infrastructure Improvement through Sensing, Computation, and Community Engagement. Congratulations to <b>Dr. Fang Jin</b> team.</span>
-								<br />
+								<div id="latestnews"></div>								
 							</div>
 						</figcaption>
 					</div>					
