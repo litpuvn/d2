@@ -161,14 +161,14 @@
 $(document).ready(function(){	
 	$.getJSON("https://litpuvn.github.io/d2/news.json", function(result){		
 		var count = 0;
-		if (count <= 2) {
-			$.each(result, function(i, field){
-				count++;			
+		$.each(result, function(i, field){
+			count++;			
+			if (count <= 2) {
 				$("#latestnews").append('<div><span><a href="'+field.url+'" class="text">' + field.title + '</a></span><br /><span class="news-date">'+field.date+'</span><br /><span class="news-description">'+field.description+'</span></div>');
 				if (count == 1) 
 					$("#latestnews").append('<br />');			
-			});
-		}
+			}
+		});		
 	});
 });
 </script>
