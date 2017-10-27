@@ -1,14 +1,16 @@
-[
 {
-	"title": "IEEE Big Data Special Sessions accepted 2 papers",
-	"date": "October 20, 2017",
-	"description": "Congratulations to <b>Long</b> and <b>Yang</b>",
-	"url": "publications.html"
-},
-{
-	"title": "NFS offers grant to our West Texas Water project",
-	"date": "September 20, 2017",
-	"description": "SCC-Planning: Enhancing Water Resource Management and Infrastructure Improvement through Sensing, Computation, and Community Engagement. Congratulations to <b>Dr. Fang Jin</b> team.",
-	"url": "http://www.depts.ttu.edu/waterresources/scc/index.php"
-},
-]
+	"news2": 
+	{
+		"title": "IEEE Big Data Special Sessions accepted 2 papers",
+		"date": "October 20, 2017",
+		"description": "Congratulations to <b>Long</b> and <b>Yang</b>",
+		"url": "publications.html"
+	},
+	"news1":
+	{
+		"title": "NFS offers grant to our West Texas Water project",
+		"date": "September 20, 2017",
+		"description": "SCC-Planning: Enhancing Water Resource Management and Infrastructure Improvement through Sensing, Computation, and Community Engagement. Congratulations to <b>Dr. Fang Jin</b> team.",
+		"url": "http://www.depts.ttu.edu/waterresources/scc/index.php"
+	}	
+}
