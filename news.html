@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Projects</title>
+		<title>News</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -24,6 +24,25 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<link rel="icon" href="images/ttu.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style2.css">
+		<style>
+			a.text {
+				color: #4877b1;
+			}
+			.news-date {
+				color: black;
+				font-style: italic;
+				font-size: smaller;
+			}
+			.news-description {
+				color: black;
+			}
+			.news-description a {
+				color: #4877b1;
+			}
+			span.news-description b {
+				color: black;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -37,9 +56,9 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="people.html">People</a></li>
-						<li style="background-color: antiquewhite"><a href="projects.html">Projects</a></li>
+						<li><a href="projects.html">Projects</a></li>
 						<li><a href="publications.html">Publications</a></li>
-						<li><a href="news.html">News</a></li>
+						<li style="background-color: antiquewhite"><a href="news.html">News</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -48,24 +67,31 @@
 		<!-- Main -->
 		<section id="main" class="wrapper style1">
 			<header class="major">
-				<h2>Our Projects</h2>					
+				<h2>Latest News</h2>				
 			</header>
 			<div class="container">
-					
+				
+<!-- Loading news script -->
+<script>
+$(document).ready(function(){	
+	$.getJSON("http://localhost/news.json", function(result){		
+		var count = 0;
+		$.each(result, function(i, field){
+			count++;			
+			if (count <= 10) {
+				$("#latestnews").append('<div><span><a href="'+field.url+'" class="text" style="font-size: x-large; font-weight: bold">' + field.title + '</a></span><br /><span class="news-date">'+field.date+'</span><br /><span class="news-description">'+field.longerDescription+'</span></div>');
+				if (count != 10) 
+					$("#latestnews").append('<br />');			
+			}
+		});		
+	});
+});
+</script>
 				<!-- Content -->
 				<section id="content">						
-					<h3><a href="http://www.depts.ttu.edu/waterresources/scc/index.php">West Texas Water</a></h3>
-					<div style="display: inline-flex">
-						<div>
-							<!-- <img src="images/economic_dev.jpg" style="width: 300px; height: 300px" /> -->
-							<a href="http://www.depts.ttu.edu/waterresources/scc/index.php" alt="Image description" style="display: inline-block; width: 250px; height: 250px; background-image: url('images/economic_dev.jpg'); background-size: contain"></a>
-						</div>
-						<div style="padding-left: 20px">
-							The Department of Computer Science and the Water Resources Center at Texas Tech University propose a planning proposal for building a capacity in water resource management. The project aims at establishing a community of stakeholders with the objectives of i) identifying the grand challenging problems in water supply chain, ii) sharing experiences of modernizing water infrastructures across counties, and iii) addressing the hurdles preventing effective water resource management in the Midwest region of the United States. The constraints of environmental disadvantages and clogged water information sharing platforms in Midwest region of the U.S imposes restrictions on transforming the aged and stalling water resource infrastructure that requires immense needs and fundamental research efforts supported and agreed upon by stakeholders. This capacity building project brings stakeholders including researchers, consumers, water supply companies, and authorities together to share their experience, strengths, and weakness and find out about the most cost-effective solutions to address the challenges pertinent to water resource management.
-						</div>							
-					</div>						
+					<p align="justify">    
+					<div id="latestnews"></div>
 				</section>
-							
 			</div>
 		</section>
 			
@@ -74,8 +100,6 @@
 			<div>
 				<img src="images/ttu.png" style="height: 100px; width: 100px" />
 				<img src="images/nsf-logo.png" style="height: 100px; width: 100px" />
-				<!-- <img src="images/newddl.png" style="width: 300px; height: 150px" /> -->
-				<!-- <span class="datadiscovery">Data Discovery Lab</span> -->
 			</div>
 			<span class="copyright">
 				&copy; Copyright. All rights reserved.</a>
