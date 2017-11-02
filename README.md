@@ -1,4 +1,4 @@
 # d2
-Data Discovery
+Data Discovery Laboratory
 
-https://litpuvn.github.io/d2/
+Live demo to the page can be found <a href="https://litpuvn.github.io/d2/">here.</a>
