@@ -38,8 +38,8 @@ body {
 	background-color: orangered;
 }
 .carousel img {
-	height: 100%;
-	width: auto;
+	max-width: 100%;
+	height: auto;
 }
 .nav-item a:hover {
 	background-color: rgba(76, 154, 173, 0.17);
