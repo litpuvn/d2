@@ -11,7 +11,7 @@ body {
 }
 @media (min-width: 992px) {
 	body {
-		padding-top: 56px;
+		/*padding-top: 56px;*/
 	}
 }
 .carousel-item {
@@ -109,4 +109,10 @@ hr {
 .project a {
 	background-color: #264d56;
 	color: white;
+}
+img.navbar-brand-image{
+	max-height: 60px;
+	display: block;
+	margin: 0 auto;
+	/*text-align: center;*/
 }
