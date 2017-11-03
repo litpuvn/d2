@@ -5464,8 +5464,8 @@ button.close {
       align-items: center;
   width: 100%;
   transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -5538,7 +5538,7 @@ button.close {
   -ms-flex-pack: center;
       justify-content: center;
   width: 15%;
-  color: #fff;
+  color: red;
   text-align: center;
   opacity: 0.5;
 }
@@ -5567,6 +5567,7 @@ button.close {
   height: 20px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
+
 }
 
 .carousel-control-prev-icon {
