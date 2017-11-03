@@ -24,6 +24,9 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
+.carousel-item.active {
+	height: auto;
+}
 .portfolio-item {
 	margin-bottom: 30px;
 }
@@ -103,8 +106,7 @@ hr {
 	border-radius: 50%;
 	stroke: 10px black;
 }
-.project a{
+.project a {
 	background-color: #264d56;
 	color: white;
 }
-
