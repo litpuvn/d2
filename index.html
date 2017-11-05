@@ -126,6 +126,13 @@
 					<div class="card h-100">
 						<h4 class="card-header">Latest News</h4>
 						<div class="card-body" id="news-body">
+							<div><span><a href="publications.html" class="text">IEEE Big Data Special Sessions accepted 2 papers</a></span><br/><span
+									class="news-description">Congratulations to <b>Long</b> and <b>Yang</b>!</span></div>
+							<a class="news-link" href="news.html">Read more &rarr;</a>
+							<hr>
+							<div><span><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1737634&HistoricalAwards=false" class="text">NFS offers grant to our West Texas Water project</a></span><br/><span
+									class="news-description">Congratulations to <b>Dr. Jin's</b> group!</span></div>
+							<a class="news-link" href="news.html">Read more &rarr;</a>
 						</div>
 					</div>
 				</div>
@@ -157,22 +164,22 @@
 			<!-- /.container -->
 		</footer>
 
-		<script>
-			$(document).ready(function () {
-				$.getJSON("news.json", function (result) {
-					var count = 0;
-					$.each(result, function (i, field) {
-						count++;
-						if (count <= 2) {
-							$("#news-body").append('<div><span><a href="' + field.url + '" class="text">' + field.title + '</a></span><br /><span class="news-description">' + field.description + '</span></div><a class="news-link" href="news.html#' + field.id + '">Read more &rarr;</a>');
-							if (count == 1) {
-								$("#news-body").append('<hr>');
-							}
-						}
-					});
-				});
-			});
-		</script>
+		<!--<script>-->
+			<!--$(document).ready(function () {-->
+				<!--$.getJSON("news.json", function (result) {-->
+					<!--var count = 0;-->
+					<!--$.each(result, function (i, field) {-->
+						<!--count++;-->
+						<!--if (count <= 2) {-->
+							<!--$("#news-body").append('<div><span><a href="' + field.url + '" class="text">' + field.title + '</a></span><br /><span class="news-description">' + field.description + '</span></div><a class="news-link" href="news.html#' + field.id + '">Read more &rarr;</a>');-->
+							<!--if (count == 1) {-->
+								<!--$("#news-body").append('<hr>');-->
+							<!--}-->
+						<!--}-->
+					<!--});-->
+				<!--});-->
+			<!--});-->
+		<!--</script>-->
 
 		<!-- Bootstrap core JavaScript -->
 		<!--<script src="vendor/jquery/jquery.min.js"></script>-->
